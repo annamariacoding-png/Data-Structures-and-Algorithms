@@ -18,6 +18,18 @@ print(isPalindrome(101))
 
 #Follow Up question: Could you solve it without converting the integer to a string?
 
-
+def isPalindrome(x):
+    temp = x
+    y = 0
+    while temp!=0:
+        num = temp % 10
+        y = (y * 10) + num
+        temp //= 10
+    if y == x:
+        return True
+    else:
+        return False
+    
+print(isPalindrome(123))
 
 
